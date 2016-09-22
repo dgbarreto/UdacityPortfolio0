@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.danilo.udacity.portfolio.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textAlignment="center"
+        android:layout_marginTop="21dp"
+        style="@style/AppTheme.Title"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp">
+
+        <Button
+            android:text="@string/btPopularMovies"
+            android:id="@+id/btPopularMovies"
+            style="@style/AppTheme.Button"
+            android:onClick="clickMessage"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:text="@string/btStockHwak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btStockHawk"
+            android:onClick="clickMessage"
+            style="@style/AppTheme.Button" />
+
+        <Button
+            android:text="@string/btBuildItBigger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btBuildItBigger"
+            android:onClick="clickMessage"
+            style="@style/AppTheme.Button" />
+
+        <Button
+            android:text="@string/btMakeYoutAppMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btMakeYoutAppMaterial"
+            android:onClick="clickMessage"
+            style="@style/AppTheme.Button" />
+
+        <Button
+            android:text="@string/btGoUbiquitous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btGoUbiquitous"
+            android:onClick="clickMessage"
+            style="@style/AppTheme.Button" />
+
+        <Button
+            android:text="@string/btCapstone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btCapstone"
+            android:onClick="clickMessage"
+            style="@style/AppTheme.Button" />
+    </LinearLayout>
+
+</RelativeLayout>
